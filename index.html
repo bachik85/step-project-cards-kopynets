@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DanIT Clinic</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header>
+    <a href="#">
+        <div class="header__logo"></div>
+    </a>
+    <div class="wrapper">
+    <button class="button header__button header__button--secondary" id="log-in">LOG IN</button>
+    <button class="button header__button " id="create-visit" style="display: none">CREATE VISIT</button>
+    </div>
+</header>
+
+<main>
+    <div class="filter__container">
+        <form action="" class="filter__form">
+            <label for="filter__input"></label><input type="text" name="filter__input" id="filter__input" placeholder="Фильтр">
+            <label for="filter__select">Сросность</label>
+            <select name="filter__select" id="filter__select">
+                <option value="all">Все</option>
+                <option value="emergency">Срочно</option>
+                <option value="priority">В приоритете</option>
+                <option value="regular">Обычная</option>
+            </select>
+        </form>
+    </div>
+    <div class="card__main-container" id="card__main-container"></div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script type='module' src="script/components/index.js"></script>
+<script type='module' src="script/classes/index.js"></script>
+<script type='module' src="script/components/filter.js"></script>
+</body>
+</html>
